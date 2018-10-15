@@ -28,7 +28,7 @@
     notify_url = '支付回调url'
     spbill_create_ip = '服务器发起请求ip'
 
-##初始化微信支付##
+## 初始化微信支付 ##
     wxpay = WxPay(AppKey, AppId, mch_id, notify_url, spbill_create_ip)
 
 ## 统一下单api ##
@@ -43,6 +43,6 @@
     ## 验证签名 (需要支付回调的xml参数)  验证通过 True/False
     wxpay.verify()
 
-## sdk demo##
+## sdk demo ##
     https://github.com/ouerrrr/wxpay
     python3 dome.py
